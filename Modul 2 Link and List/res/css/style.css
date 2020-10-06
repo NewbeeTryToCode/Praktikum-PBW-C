@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Haettenschweiler';
+    src: url('Haettenschweiler.eot');
+    src: url('Haettenschweiler.eot?#iefix') format('embedded-opentype'), url('Haettenschweiler.woff2') format('woff2'), url('Haettenschweiler.woff') format('woff'), url('Haettenschweiler.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('AgencyFB-Reg.eot');
+    src: url('AgencyFB-Reg.eot?#iefix') format('embedded-opentype'), url('AgencyFB-Reg.woff2') format('woff2'), url('AgencyFB-Reg.woff') format('woff'), url('AgencyFB-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F6F5F5;
+    font-family: Haettenschweiler, sans-serif;
+    font-size: 1.2 rem;
+    color: #5D5C61;
+    min-height: 100vh;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo img {
+    width: 9rem;
+}
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    pad: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav a:hover {
+    color: #A0A3A9;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    flex-grow: 1;
+}
+
+.tittle {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 2em;
+}
+
+.subtittle {
+    font-family: Agency FB, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.btn {
+    margin-top: .75rem;
+    color: #F6F5F5;
+    background-color: #6495ED;
+    text-decoration: none;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+.btn:hover {
+    background-color: #2180d8;
+}
+
+.btn:focus {
+    background-color: #2796ff;
+}
+
+.btn.sec {
+    background-color: #A0A3A9;
+}
+
+.btn.sec:hover {
+    background-color: #C4C4C4;
+}
+
+.btn.sec:focus {
+    background-color: #dbdada;
+}
