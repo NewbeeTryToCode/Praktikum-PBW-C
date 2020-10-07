@@ -10,6 +10,7 @@
     margin-right: 2rem;
     height: auto;
     max-width: 590px;
+    filter: drop-shadow(-5px 12px 4px rgba(0, 0, 0, 0.25));
 }
 
 .discover-main-section .call-to-action {

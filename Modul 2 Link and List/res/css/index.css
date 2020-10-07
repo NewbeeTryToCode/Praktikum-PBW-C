@@ -13,7 +13,7 @@
     justify-content: flex-end;
 }
 
-.index-main-section .img-wrapper .i {
+.index-main-section .img-wrapper .index-image {
     background-image: url("../img/main-index-photo.png");
     max-height: 43vh;
     min-width: 20vw;
