@@ -2,27 +2,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     flex-grow: 1;
 }
 
-.tittle {
+.contact-main-section .tittle {
     font-size: 2em;
     font-weight: 600;
     text-align: center;
 }
 
-.subttitle {
-    font-size: 1.25em;
+.contact-main-section .subtittle {
+    font-size: 1.75em;
     font-weight: 500;
+    text-align: center;
 }
 
 .contact-form {
     background-color: #C4C4C4;
-    width: 45vw;
-    margin: 0 2em;
+    width: 40vw;
+    margin: 0 2.5em;
     max-width: 50%;
-    padding: 2rem 4rem;
+    padding: 2rem 2.5rem;
     border-radius: 20px;
 }
 
@@ -76,5 +76,9 @@
         width: 80vw;
         max-width: inherit;
         margin: 2rem, 0;
+    }
+    .form-message {
+        width: 64vw;
+        height: 20vw;
     }
 }
