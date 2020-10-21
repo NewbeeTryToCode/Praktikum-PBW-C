@@ -10,42 +10,46 @@
 
 <body>
     <section class="main-section">
-        <div class="main-header">
-            <h1>Sign Up</h1>
+        <div class="img-wrapper">
+
         </div>
-        <form action="regsiter.php" method="POST">
-            <div class="input-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+        <div class="main-form">
+            <div class="main-header">
+                <h1>Sign Up</h1>
             </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div class="radio-group">
-                <input type="radio" name="gender" id="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="gender" value="female">
-                <label for="female">Female</label>
-            </div>
-            <div class="checkbox-group">
-                <label for="programming-interest">Programming Interest</label>
-                <input type="checkbox" name="webdev" id="webdev">
-                <label for="webdev">Web Development</label>
-                <input type="checkbox" name="gamedev" id="gamedev">
-                <label for="gamedev">Game Development</label>
-                <input type="checkbox" name="datascience" id="datascience">
-                <label for="datasciende">Data Science</label>
-                <input type="checkbox" name="databasedd" id="databasedd">
-                <label for="databasedd">Database Design & Development</label>
-            </div>
-            <div class="select-group">
-                <label for="country">Country</label>
-                <select name="country" id="country">
+            <form action="regsiter.php" method="POST">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="checkbox-group">
+                    <label for="programming-interest">Programming Interest</label>
+                    <input type="checkbox" name="webdev" id="webdev">
+                    <label for="webdev">Web Development</label>
+                    <input type="checkbox" name="gamedev" id="gamedev">
+                    <label for="gamedev">Game Development</label>
+                    <input type="checkbox" name="datascience" id="datascience">
+                    <label for="datasciende">Data Science</label>
+                    <input type="checkbox" name="databasedd" id="databasedd">
+                    <label for="databasedd">Database Design & Development</label>
+                </div>
+                <div class="select-group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
                     <option value="indonesia">Indonesia</option>
                     <option value="malaysia">Malaysia</option>
                     <option value="thailand">Thailand</option>
@@ -54,21 +58,22 @@
                     <option value="timorleste">Timor Leste</option>
                     <option value="camboja">Camboja</option>
                 </select>
-            </div>
-            <div class="textarea-group">
-                <label for="address">Address</label>
-                <textarea name="address" id="adress"></textarea>
-            </div>
-            <div class="input-group">
-                <label for="image">Upload your profile picture</label>
-                <input type="file" name="image">
-            </div>
-            <div class="submit-button">
-                <button>Sign up</button>
-            </div>
-            <div class="footer">
-                <p>Already Have Account? <a href="app/login.html">Login</a></p>
-            </div>
+                </div>
+                <div class="textarea-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="adress"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="image">Upload your profile picture</label>
+                    <input type="file" name="image">
+                </div>
+                <div class="submit-button">
+                    <button>Sign up</button>
+                </div>
+                <div class="footer">
+                    <p>Already Have Account? <a href="app/login.html">Login</a></p>
+                </div>
+        </div>
         </form>
     </section>
 </body>
