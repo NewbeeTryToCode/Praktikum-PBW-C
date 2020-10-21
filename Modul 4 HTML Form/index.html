@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiLEARN - Registration</title>
     <link rel="stylesheet" href="res/css/style.css">
+    <link rel="stylesheet" href="res/css/index.css">
 </head>
 
-<body>
-    <section class="main-section">
+<body class="container full-height-grow">
+    <header class="main-header">
+        <a href="index.html" class="brand-logo">
+            <img src="../res/img/logo.png" alt="">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main main-section">
         <div class="img-wrapper">
-
         </div>
         <div class="main-form">
             <div class="main-header">
@@ -31,13 +44,14 @@
                     <input type="password" name="password" id="password">
                 </div>
                 <div class="radio-group">
+                    <label for="gender">Gender</label><br>
                     <input type="radio" name="gender" id="gender" value="male">
                     <label for="male">Male</label>
                     <input type="radio" name="gender" id="gender" value="female">
                     <label for="female">Female</label>
                 </div>
                 <div class="checkbox-group">
-                    <label for="programming-interest">Programming Interest</label>
+                    <label for="programming-interest">Programming Interest</label><br>
                     <input type="checkbox" name="webdev" id="webdev">
                     <label for="webdev">Web Development</label>
                     <input type="checkbox" name="gamedev" id="gamedev">
@@ -47,7 +61,7 @@
                     <input type="checkbox" name="databasedd" id="databasedd">
                     <label for="databasedd">Database Design & Development</label>
                 </div>
-                <div class="select-group">
+                <div class="input-group">
                     <label for="country">Country</label>
                     <select name="country" id="country">
                     <option value="indonesia">Indonesia</option>
@@ -59,7 +73,7 @@
                     <option value="camboja">Camboja</option>
                 </select>
                 </div>
-                <div class="textarea-group">
+                <div class="input-group">
                     <label for="address">Address</label>
                     <textarea name="address" id="adress"></textarea>
                 </div>
@@ -67,11 +81,11 @@
                     <label for="image">Upload your profile picture</label>
                     <input type="file" name="image">
                 </div>
-                <div class="submit-button">
-                    <button>Sign up</button>
+                <div class="input-group">
+                    <button class="btn btn-login">Sign up</button>
                 </div>
-                <div class="footer">
-                    <p>Already Have Account? <a href="app/login.html">Login</a></p>
+                <div class="form-footer">
+                    <p>Already Have Account? <a class="link" href="app/login.html">Login</a></p>
                 </div>
         </div>
         </form>
