@@ -7,7 +7,7 @@
 }
 
 .main-section {
-    margin-top: 4rem;
+    margin-top: 5vh;
     display: table;
     width: 100%;
     background: #f6f5f5;
@@ -16,7 +16,7 @@
 }
 
 .main-section .img-wrapper {
-    background: url("../img/register.svg") top left/cover no-repeat;
+    background: url("../img/register.svg") center left/contain no-repeat;
     display: table-cell;
     width: 60%;
     height: auto;
@@ -36,17 +36,20 @@
     flex-direction: column;
 }
 
-.input-group:last-child {
-    margin-top: 200px;
+.input-group label,
+.checkbox-group label:first-child,
+.radio-group label:first-child {
+    font-weight: bold;
+    margin-bottom: .75rem;
 }
 
-.input-group label,
-.check-box label {
-    font-weight: bold;
+.checkbox-group,
+.radio-group {
     margin-bottom: .5rem;
 }
 
-.input-group input {
+.input-group input,
+.input-group select {
     outline: none;
     background: #FFFFFF;
     border: 1px solid #6495ED;
@@ -54,6 +57,17 @@
     padding: .5rem;
     color: inherit;
     border-radius: 5px;
+}
+
+.input-group textarea {
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #6495ED;
+    font-size: 1rem;
+    padding: .5rem;
+    color: inherit;
+    border-radius: 5px;
+    min-height: 10vh;
 }
 
 .input-group :focus {
@@ -71,4 +85,13 @@
 
 .link:hover {
     color: #2180d8;
+}
+
+@media(max-width:900px) {
+    .main-section .img-wrapper {
+        display: none;
+    }
+    .main-section .main-form {
+        padding: 2rem 3rem;
+    }
 }
