@@ -30,7 +30,8 @@
             <div class="main-header">
                 <h1 class="tittle">Login</h1>
             </div>
-            <form action="login.php" method="POST">
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <form target="dummyframe" action="login.php" method="POST">
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
@@ -48,6 +49,8 @@
             </form>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../res/js/login.js"></script>
 </body>
 
 </html>

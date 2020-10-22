@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *,
 *::before,
 *::after {
@@ -9,7 +10,7 @@ body {
     margin: 0;
     background-color: f6f5f5;
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial;
 }
 
 .container {
@@ -95,4 +96,28 @@ body {
 
 a {
     text-decoration: none;
+}
+
+span .fa-eye {
+    background: url("../img/eye.svg");
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    float: right;
+    margin-top: -28px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 3;
+}
+
+span .fa-eyeoff {
+    background: url("../img/eyeoff.svg");
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    float: right;
+    margin-top: -28px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 3;
 }

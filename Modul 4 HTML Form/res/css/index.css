@@ -74,6 +74,52 @@
     border-color: #596da0;
 }
 
+.progress-bar {
+    height: 3px !important;
+    background-color: rgba(128, 128, 128, 0.367);
+}
+
+.progress-bar-danger {
+    background-color: red;
+}
+
+.progress-bar-warning {
+    background-color: yellow;
+}
+
+.progress-bar-success {
+    background-color: green;
+}
+
+.input-group:last-child {
+    margin-top: 20px;
+}
+
+.fa-circle {
+    background: url("../img/dot.svg");
+    width: 25px;
+    height: 20px;
+    float: left;
+    margin-top: -1px;
+    margin-right: -2px;
+    position: relative;
+}
+
+.fa-check {
+    background: url("../img/check.svg");
+    width: 25px;
+    height: 20px;
+    float: left;
+    margin-top: -1px;
+    margin-right: -2px;
+    position: relative;
+    z-index: 3;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
 .form-footer {
     margin-top: 40px;
     text-align: center;
@@ -93,5 +139,6 @@
     }
     .main-section .main-form {
         padding: 2rem 3rem;
+        margin: 2rem;
     }
 }
