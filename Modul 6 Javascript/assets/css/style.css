@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Teko, Arial;
+    font-size: 1.5rem;
+    color: #A5A5A5;
+}
+
+body {
+    background-color: #f4f4f4;
+    width: 100w;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-calculator {
+    padding: 1rem;
+    width: 25%;
+    height: 80%;
+    box-shadow: -4px -4px 18px #FFFFFF, 4px 4px 12px #E5E5E5;
+    border-radius: 20px;
+}
+
+.main-calculator .calculator_display {
+    height: 14vh;
+    padding: 0 10px;
+    background: #F0F0F3;
+    box-shadow: -4px -4px 2px #E5E5E5, 4px 4px 2px rgba(255, 255, 255, 0.25), inset -4px -4px 6px rgba(255, 247, 247, 0.25), inset 4px 4px 6px #E5E5E5;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.calculator_display_operation input,
+.calculator_display_result input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    text-align: right;
+    text-shadow: 4px 4px 6px #A5A5A5;
+}
+
+.calculator_display_operation input {
+    color: #D7D7D7;
+    text-shadow: 4px 4px 4px #D7D7D7;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.main-calculator .calculator_keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+    grid-gap: 1rem;
+}
+
+.main-calculator .calculator_keys button {
+    outline: none;
+    border-radius: 60px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #E5E5E5, -4px -4px 8px #FFFFFF;
+}
+
+.main-calculator .calculator_keys button:hover,
+.main-calculator .calculator_keys button:active {
+    background-color: whitesmoke;
+}
+
+.main-calculator .calculator_keys button:active {
+    box-shadow: inset 4px 4px 7px #E5E5E5, inset -4px -4px 8px #FFFFFF;
+}
+
+.main-calculator .calculator_keys .op_key,
+.main-calculator .calculator_keys .eq_key {
+    color: #DCC600;
+}
