@@ -1,5 +1,6 @@
 const inputValue = document.querySelector(".calculator_display_result input")
-const inputOperation = document.querySelector(".calculator_display_operation .value")
+const inputOperation = document.querySelector(".calculator_display_operation p")
+let totalOperation = ""
 document.querySelectorAll(".calculator_keys .num_key").forEach(e => {
     e.onclick = () => (inputValue.value = inputValue.value !== "0" ? inputValue.value + e.innerText : e.innerText);
 });
@@ -32,6 +33,9 @@ const evaluate = buffer => {
     const secondOperand = buffer.pop().value;
     const operator = buffer.pop().value;
     const firstOperand = buffer.pop().value;
+    const opText = document.querySelector(`.op_key[op=${operator}]`);
+    totalOperation = String(firstOperand + " " + opText.innerText + " " + secondOperand);
+
 
     switch (operator) {
         case "add":
@@ -50,7 +54,6 @@ const evaluate = buffer => {
             return secondOperand;
     }
 }
-
 for (const opName of["add", "subtract", "multiply", "divide", "percent"]) {
     document.querySelector(`.op_key[op=${opName}]`).onclick =
         opCallback(opName);
@@ -61,12 +64,14 @@ document.querySelector(".eq_key").onclick =
         if (buffer && buffer.length) {
             buffer.push({ value: parseFloat(inputValue.value) });
             inputValue.value = evaluate(buffer);
+            inputOperation.innerText = totalOperation;
         }
     }
 
 document.querySelector(".op_key[op=clear]").onclick =
     () => {
         inputValue.value = 0;
+        inputOperation.innerText = "0"
         buffer.length = 0;
     }
 
