@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    color: #A5A5A5;
+    font-family: Roboto, Arial;
+}
+
+body {
+    background-color: #fafafa;
+    width: 100w;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_form {
+    margin: 20px 0;
+    width: 30vw;
+    height: 65vh;
+    box-shadow: -4px -4px 18px #FFFFFF, 4px 4px 12px #E5E5E5;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+.input_group:last-child {
+    margin-top: 40px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #E5E5E5, -4px -4px 8px #FFFFFF;
+}
+
+.input_group label {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.input_group input {
+    border-radius: 8px;
+    padding: 0 10px;
+    border: none;
+    background: #F0F0F3;
+    text-shadow: 4px 4px 6px #A5A5A5;
+    box-shadow: -4px -4px 2px #E5E5E5, 4px 4px 2px rgba(255, 255, 255, 0.25), inset -4px -4px 6px rgba(255, 247, 247, 0.25), inset 4px 4px 6px #E5E5E5;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+}
+
+.btn:active {
+    box-shadow: inset 4px 4px 7px #E5E5E5, inset -4px -4px 8px #FFFFFF;
+}
+
+@media(max-width:900px) {
+    .main_form {
+        width: 70%;
+    }
+}
+
+@media(min-width:901px) and (max-width:1600px) {
+    .main_form {
+        width: 50%;
+    }
+}
