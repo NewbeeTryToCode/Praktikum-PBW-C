@@ -1,0 +1,17 @@
+form {
+    margin: 2rem 0;
+    width: 50%;
+}
+
+.btn.btn-kembali {
+    padding: .75rem;
+    background-color: gray;
+}
+
+.btn.btn-kembali:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+form .input-group:last-child {
+    margin-top: 100px;
+}

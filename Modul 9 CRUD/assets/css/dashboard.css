@@ -1,0 +1,38 @@
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-table td,
+.dashboard-table th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.dashboard-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6495ED;
+    color: white;
+}
+
+.dashboard-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btnaksi {
+    margin: 5px;
+    padding: .35rem;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid #fafafa;
+}
+
+.btnaksi.btn-edit {
+    background-color: #b1b1b1;
+}
+
+.btnaksi.btn-hapus {
+    background-color: #f83d3d;
+}
